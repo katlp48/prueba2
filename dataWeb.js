@@ -1,6 +1,6 @@
 module.exports = function () {
   var data = {
-    Perfil_Empresa: [
+    Empresa: [
       {
         id:1,
         nombre_Empresa: "Interbank",

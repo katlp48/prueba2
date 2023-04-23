@@ -3,16 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HttpClientModule} from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTableModule } from '@angular/material/table';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MatTableModule } from '@angular/material/table'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input'
+import { MatDatepickerModule } from '@angular/material/datepicker'
+import { MatNativeDateModule } from '@angular/material/core'
+import { MatButtonModule } from '@angular/material/button';
+import { EmpresaComponent } from './components/empresa/empresa.component';
+import { EmpresaListarComponent } from './components/empresa/empresa-listar/empresa-listar.component';
+import { EmpresaCRUDComponent } from './components/empresa/empresa-crud/empresa-crud.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmpresaComponent,
+    EmpresaListarComponent,
+    EmpresaCRUDComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +31,8 @@ import {MatButtonModule} from '@angular/material/button';
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     MatButtonModule
   ],
   providers: [],
