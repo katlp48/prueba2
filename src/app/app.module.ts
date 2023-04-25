@@ -27,7 +27,6 @@ import { EmpresaDialogoComponent } from './components/empresa/empresa-listar/emp
 import { UsuarioDialogoComponent } from './components/usuario/usuario-listar/usuario-dialogo/usuario-dialogo.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RequisitosDialogoComponent } from './components/requisitos/requisitos-listar/requisitos-dialogo/requisitos-dialogo.component';
-import { MatDialogModule } from '@angular/material/dialog'
 
 @NgModule({
   declarations: [
