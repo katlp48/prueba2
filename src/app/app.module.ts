@@ -20,6 +20,10 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 import { UsuarioListarComponent } from './components/usuario/usuario-listar/usuario-listar.component';
 import { UsuarioCreaeditaComponent } from './components/usuario/usuario-creaedita/usuario-creaedita.component';
 import { MatSelectModule } from '@angular/material/select';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import { EmpresaDialogoComponent } from './components/empresa/empresa-listar/empresa-dialogo/empresa-dialogo.component';
 import { UsuarioDialogoComponent } from './components/usuario/usuario-listar/usuario-dialogo/usuario-dialogo.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RequisitosDialogoComponent } from './components/requisitos/requisitos-listar/requisitos-dialogo/requisitos-dialogo.component';
@@ -31,6 +35,7 @@ import { MatDialogModule } from '@angular/material/dialog'
     EmpresaComponent,
     EmpresaListarComponent,
     EmpresaCRUDComponent,
+    EmpresaDialogoComponent,
     RequisitosComponent,
     RequisitosListarComponent,
     RequisitosCreaeditaComponent,
@@ -53,6 +58,9 @@ import { MatDialogModule } from '@angular/material/dialog'
     MatNativeDateModule,
     MatButtonModule,
     MatSelectModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatIconModule,
     MatDialogModule
   ],
   providers: [],
