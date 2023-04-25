@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { Empresa } from 'src/app/model/empresa';
+import { Empresa } from 'src/app/model/Empresa';
 import { EmpresaService } from 'src/app/service/empresa.service'
+import { EmpresaDialogoComponent } from './empresa-dialogo/empresa-dialogo.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-empresa-listar',
@@ -11,9 +13,10 @@ import { EmpresaService } from 'src/app/service/empresa.service'
 export class EmpresaListarComponent implements OnInit{
 
   dataSourceEmpresa: MatTableDataSource<Empresa>=new MatTableDataSource();
-  displayedColumnsEmpresa: string[] = ['id', 'nombre', 'descripcion', 'correo', 'accion01']
+  idMayor: number = 0
+  displayedColumnsEmpresa: string[] = ['id', 'nombre', 'descripcion', 'correo', 'accion01', 'accion02']
 
-  constructor(private empresaService: EmpresaService) {}
+  constructor(private empresaService: EmpresaService, private dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.empresaService.List().subscribe(data=> {
@@ -28,4 +31,15 @@ export class EmpresaListarComponent implements OnInit{
     this.dataSourceEmpresa.filter = e.target.value.trim();
   }
 
+  confirm(id: number) {
+    this.idMayor = id;
+    this.dialog.open(EmpresaDialogoComponent);
+  }
+  eliminar(id: number) {
+    this.empresaService.Delete(id).subscribe(() => {
+      this.empresaService.List().subscribe(data => {
+        this.empresaService.SetList(data);
+      })
+    })
+  }
 }

@@ -14,13 +14,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { EmpresaComponent } from './components/empresa/empresa.component';
 import { EmpresaListarComponent } from './components/empresa/empresa-listar/empresa-listar.component';
 import { EmpresaCRUDComponent } from './components/empresa/empresa-crud/empresa-crud.component';
+import { EmpresaDialogoComponent } from './components/empresa/empresa-listar/empresa-dialogo/empresa-dialogo.component';
+import { MatDialogModule } from '@angular/material/dialog'
 
 @NgModule({
   declarations: [
     AppComponent,
     EmpresaComponent,
     EmpresaListarComponent,
-    EmpresaCRUDComponent
+    EmpresaCRUDComponent,
+    EmpresaDialogoComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { EmpresaCRUDComponent } from './components/empresa/empresa-crud/empresa-
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
