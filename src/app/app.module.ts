@@ -11,6 +11,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
 import { RequisitosListarComponent } from './components/requisitos/requisitos-listar/requisitos-listar.component';
 import { RequisitosCreaeditaComponent } from './components/requisitos/requisitos-creaedita/requisitos-creaedita.component';
+import { RequisitosDialogoComponent } from './components/requisitos/requisitos-listar/requisitos-dialogo/requisitos-dialogo.component';
+import { MatDialogModule } from '@angular/material/dialog'
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { RequisitosCreaeditaComponent } from './components/requisitos/requisitos
     RequisitosComponent,
     RequisitosListarComponent,
     RequisitosCreaeditaComponent,
+    RequisitosDialogoComponent
+
 
   ],
   imports: [
@@ -29,7 +33,9 @@ import { RequisitosCreaeditaComponent } from './components/requisitos/requisitos
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
