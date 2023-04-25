@@ -22,6 +22,8 @@ import { UsuarioCreaeditaComponent } from './components/usuario/usuario-creaedit
 import { MatSelectModule } from '@angular/material/select';
 import { UsuarioDialogoComponent } from './components/usuario/usuario-listar/usuario-dialogo/usuario-dialogo.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { RequisitosDialogoComponent } from './components/requisitos/requisitos-listar/requisitos-dialogo/requisitos-dialogo.component';
+import { MatDialogModule } from '@angular/material/dialog'
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     RequisitosComponent,
     RequisitosListarComponent,
     RequisitosCreaeditaComponent,
+    RequisitosDialogoComponent,
     UsuarioComponent,
     UsuarioListarComponent,
     UsuarioCreaeditaComponent,

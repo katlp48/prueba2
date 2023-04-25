@@ -10,8 +10,9 @@ const base_url = environment.base
 })
 export class RequisitoService
 {
-  private url = `${base_url}/Requisitos`
 
+  private url = `${base_url}/Requisitos`
+  private confirmarEliminacion = new Subject<Boolean>()
   private listaCambio = new Subject<Requisito[]>()
 
   constructor(private http: HttpClient) { }
@@ -33,6 +34,17 @@ export class RequisitoService
   }
   update(aut: Requisito) {
     return this.http.put(this.url + "/" + aut.id, aut);
+  }
+
+  delete(id: number) {
+    return this.http.delete(`${this.url}/${id}`)
+  }
+
+  getConfirmDelete(){
+    return this.confirmarEliminacion.asObservable();
+  }
+  setConfirmDelete(estado:Boolean){
+    this.confirmarEliminacion.next(estado);
   }
 
 
