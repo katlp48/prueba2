@@ -24,8 +24,10 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { EmpresaDialogoComponent } from './components/empresa/empresa-listar/empresa-dialogo/empresa-dialogo.component';
+import { UsuarioDialogoComponent } from './components/usuario/usuario-listar/usuario-dialogo/usuario-dialogo.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { RequisitosDialogoComponent } from './components/requisitos/requisitos-listar/requisitos-dialogo/requisitos-dialogo.component';
 import { MatDialogModule } from '@angular/material/dialog'
-
 
 @NgModule({
   declarations: [
@@ -33,13 +35,15 @@ import { MatDialogModule } from '@angular/material/dialog'
     EmpresaComponent,
     EmpresaListarComponent,
     EmpresaCRUDComponent,
+    EmpresaDialogoComponent,
     RequisitosComponent,
     RequisitosListarComponent,
     RequisitosCreaeditaComponent,
+    RequisitosDialogoComponent,
     UsuarioComponent,
     UsuarioListarComponent,
     UsuarioCreaeditaComponent,
-    EmpresaDialogoComponent
+    UsuarioDialogoComponent
   ],
   imports: [
     BrowserModule,
