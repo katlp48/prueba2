@@ -25,6 +25,9 @@ export class EmpresaListarComponent implements OnInit{
     this.empresaService.GetList().subscribe(data=> {
       this.dataSourceEmpresa = new MatTableDataSource(data)
     })
+    this.empresaService.GetConfirmDelete().subscribe(data=>{
+      data== true? this.eliminar(this.idMayor) : false;
+    })
   }
 
   filtrar(e:any){
