@@ -18,6 +18,7 @@ const routes: Routes = [
     path: 'requisitos', component: RequisitosComponent, children: [
       { path: 'nuevo', component: RequisitosCreaeditaComponent },
       { path: 'edicion/:id', component: RequisitosCreaeditaComponent }
+    ]
   },
   {
     path: 'usuarios', component: UsuarioComponent, children: [
