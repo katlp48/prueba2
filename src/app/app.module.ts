@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -14,6 +13,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { EmpresaComponent } from './components/empresa/empresa.component';
 import { EmpresaListarComponent } from './components/empresa/empresa-listar/empresa-listar.component';
 import { EmpresaCRUDComponent } from './components/empresa/empresa-crud/empresa-crud.component';
+import { RequisitosComponent } from './components/requisitos/requisitos.component';
+import { RequisitosListarComponent } from './components/requisitos/requisitos-listar/requisitos-listar.component';
+import { RequisitosCreaeditaComponent } from './components/requisitos/requisitos-creaedita/requisitos-creaedita.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,10 @@ import { EmpresaCRUDComponent } from './components/empresa/empresa-crud/empresa-
     EmpresaComponent,
     EmpresaListarComponent,
     EmpresaCRUDComponent
+    Requerimientos,
+    RequisitosComponent,
+    RequisitosListarComponent,
+    RequisitosCreaeditaComponent
   ],
   imports: [
     BrowserModule,
