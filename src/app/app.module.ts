@@ -16,6 +16,12 @@ import { EmpresaCRUDComponent } from './components/empresa/empresa-crud/empresa-
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
 import { RequisitosListarComponent } from './components/requisitos/requisitos-listar/requisitos-listar.component';
 import { RequisitosCreaeditaComponent } from './components/requisitos/requisitos-creaedita/requisitos-creaedita.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { UsuarioListarComponent } from './components/usuario/usuario-listar/usuario-listar.component';
+import { UsuarioCreaeditaComponent } from './components/usuario/usuario-creaedita/usuario-creaedita.component';
+import { MatSelectModule } from '@angular/material/select';
+import { UsuarioDialogoComponent } from './components/usuario/usuario-listar/usuario-dialogo/usuario-dialogo.component';
+import { MatDialogModule } from '@angular/material/dialog';
 import { RequisitosDialogoComponent } from './components/requisitos/requisitos-listar/requisitos-dialogo/requisitos-dialogo.component';
 import { MatDialogModule } from '@angular/material/dialog'
 
@@ -28,8 +34,11 @@ import { MatDialogModule } from '@angular/material/dialog'
     RequisitosComponent,
     RequisitosListarComponent,
     RequisitosCreaeditaComponent,
-    RequisitosDialogoComponent
-
+    RequisitosDialogoComponent,
+    UsuarioComponent,
+    UsuarioListarComponent,
+    UsuarioCreaeditaComponent,
+    UsuarioDialogoComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +52,8 @@ import { MatDialogModule } from '@angular/material/dialog'
     MatDatepickerModule,
     MatNativeDateModule,
     MatButtonModule,
-    MatDialogModule,
+    MatSelectModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
