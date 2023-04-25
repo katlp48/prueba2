@@ -11,15 +11,16 @@ const base_url=environment.base
 export class UsuarioService {
   private url=`${base_url}/Usuario`
   private listaCambio=new Subject<Usuario[]>()
-    constructor(private http:HttpClient) { }
-    list() {
-      return this.http.get<Usuario[]>(this.url);
-    }
-    insert(u: Usuario){
-      return this.http.post(this.url,u)
-    }
-    setList(ListaNueva: Usuario[]){
-      this.listaCambio.next(ListaNueva);
+  private confirmarEliminacion = new Subject<Boolean>()
+  constructor(private http:HttpClient) { }
+  list() {
+    return this.http.get<Usuario[]>(this.url);
+  }
+  insert(u: Usuario){
+    return this.http.post(this.url,u)
+  }
+  setList(ListaNueva: Usuario[]){
+    this.listaCambio.next(ListaNueva);
     }
     getList(){
       return this.listaCambio.asObservable();
@@ -29,5 +30,15 @@ export class UsuarioService {
     }
     update(au:Usuario){
       return this.http.put(this.url+"/"+au.id,au)
+    }
+    delete(id: number) {
+      return this.http.delete(`${this.url}/${id}`)
+    }
+
+    getConfirmDelete(){
+      return this.confirmarEliminacion.asObservable();
+    }
+    setConfirmDelete(estado:Boolean){
+      this.confirmarEliminacion.next(estado);
     }
   }

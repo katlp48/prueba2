@@ -20,9 +20,8 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 import { UsuarioListarComponent } from './components/usuario/usuario-listar/usuario-listar.component';
 import { UsuarioCreaeditaComponent } from './components/usuario/usuario-creaedita/usuario-creaedita.component';
 import { MatSelectModule } from '@angular/material/select';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
+import { UsuarioDialogoComponent } from './components/usuario/usuario-listar/usuario-dialogo/usuario-dialogo.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -35,7 +34,8 @@ import {MatIconModule} from '@angular/material/icon';
     RequisitosCreaeditaComponent,
     UsuarioComponent,
     UsuarioListarComponent,
-    UsuarioCreaeditaComponent
+    UsuarioCreaeditaComponent,
+    UsuarioDialogoComponent
   ],
   imports: [
     BrowserModule,
@@ -50,9 +50,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatNativeDateModule,
     MatButtonModule,
     MatSelectModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatIconModule
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
