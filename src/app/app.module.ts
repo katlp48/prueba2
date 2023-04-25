@@ -16,6 +16,11 @@ import { EmpresaCRUDComponent } from './components/empresa/empresa-crud/empresa-
 import { RequisitosComponent } from './components/requisitos/requisitos.component';
 import { RequisitosListarComponent } from './components/requisitos/requisitos-listar/requisitos-listar.component';
 import { RequisitosCreaeditaComponent } from './components/requisitos/requisitos-creaedita/requisitos-creaedita.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { UsuarioListarComponent } from './components/usuario/usuario-listar/usuario-listar.component';
+import { UsuarioCreaeditaComponent } from './components/usuario/usuario-creaedita/usuario-creaedita.component';
+import { MatSelectModule } from '@angular/material/select'
+
 
 @NgModule({
   declarations: [
@@ -26,7 +31,10 @@ import { RequisitosCreaeditaComponent } from './components/requisitos/requisitos
     Requerimientos,
     RequisitosComponent,
     RequisitosListarComponent,
-    RequisitosCreaeditaComponent
+    RequisitosCreaeditaComponent,
+    UsuarioComponent,
+    UsuarioListarComponent,
+    UsuarioCreaeditaComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +47,9 @@ import { RequisitosCreaeditaComponent } from './components/requisitos/requisitos
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSelectModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
