@@ -9,10 +9,17 @@ import { MatTableModule } from '@angular/material/table';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { UsuarioListarComponent } from './components/usuario/usuario-listar/usuario-listar.component';
+import { UsuarioCreaeditaComponent } from './components/usuario/usuario-creaedita/usuario-creaedita.component';
+import { MatSelectModule } from '@angular/material/select'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsuarioComponent,
+    UsuarioListarComponent,
+    UsuarioCreaeditaComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +30,8 @@ import {MatButtonModule} from '@angular/material/button';
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
