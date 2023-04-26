@@ -6,6 +6,8 @@ import { RequisitosComponent } from './components/requisitos/requisitos.componen
 import { RequisitosCreaeditaComponent } from './components/requisitos/requisitos-creaedita/requisitos-creaedita.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { UsuarioCreaeditaComponent } from './components/usuario/usuario-creaedita/usuario-creaedita.component';
+import { InstitucionComponent } from './components/institucion/institucion.component';
+import { InstitucionCrudComponent } from './components/institucion/institucion-crud/institucion-crud.component';
 
 const routes: Routes = [
   {
@@ -24,6 +26,12 @@ const routes: Routes = [
     path: 'usuarios', component: UsuarioComponent, children: [
       { path: 'nuevo', component: UsuarioCreaeditaComponent },
       { path: 'edicion/:id', component: UsuarioCreaeditaComponent }
+    ]
+  },
+  {
+    path: 'Institucion', component: InstitucionComponent, children: [
+      { path: 'Crear', component: InstitucionCrudComponent },
+      { path: 'Edicion/:id', component: InstitucionCrudComponent }
     ]
   }
 ];
