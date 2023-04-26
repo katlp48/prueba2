@@ -27,6 +27,10 @@ import { EmpresaDialogoComponent } from './components/empresa/empresa-listar/emp
 import { UsuarioDialogoComponent } from './components/usuario/usuario-listar/usuario-dialogo/usuario-dialogo.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RequisitosDialogoComponent } from './components/requisitos/requisitos-listar/requisitos-dialogo/requisitos-dialogo.component';
+import { InstitucionComponent } from './components/institucion/institucion.component';
+import { InstitucionListarComponent } from './components/institucion/institucion-listar/institucion-listar.component';
+import { InstitucionCrudComponent } from './components/institucion/institucion-crud/institucion-crud.component';
+import { InstitucionDialogoComponent } from './components/institucion/institucion-listar/institucion-dialogo/institucion-dialogo.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { RequisitosDialogoComponent } from './components/requisitos/requisitos-l
     UsuarioComponent,
     UsuarioListarComponent,
     UsuarioCreaeditaComponent,
-    UsuarioDialogoComponent
+    UsuarioDialogoComponent,
+    InstitucionComponent,
+    InstitucionListarComponent,
+    InstitucionCrudComponent,
+    InstitucionDialogoComponent
   ],
   imports: [
     BrowserModule,
