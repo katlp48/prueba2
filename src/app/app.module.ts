@@ -31,6 +31,14 @@ import { CalificacionComponent } from './components/calificacion/Calificacion.co
 import { CalificacionListarComponent } from './components/calificacion/Calificacion-listar/Calificacion-listar.component';
 import { CalificacionCreaeditaComponent } from './components/calificacion/Calificacion-creaedita/Calificacion-creaedita.component';
 import { CalificacionDialogoComponent } from './components/calificacion/Calificacion-listar/Calificacion-dialogo/Calificacion-dialogo.component';
+import { InstitucionComponent } from './components/institucion/institucion.component';
+import { InstitucionListarComponent } from './components/institucion/institucion-listar/institucion-listar.component';
+import { InstitucionCrudComponent } from './components/institucion/institucion-crud/institucion-crud.component';
+import { InstitucionDialogoComponent } from './components/institucion/institucion-listar/institucion-dialogo/institucion-dialogo.component';
+import { CarreraCreaeditaComponent } from './components/carrera/carrera-creaedita/carrera-creaedita.component';
+import { CarreraListarComponent } from './components/carrera/carrera-listar/carrera-listar.component';
+import { CarreraDialogoComponent } from './components/carrera/carrera-listar/carrera-dialogo/carrera-dialogo.component';
+import { CarreraComponent } from './components/carrera/carrera.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +59,14 @@ import { CalificacionDialogoComponent } from './components/calificacion/Califica
     CalificacionListarComponent,
     CalificacionCreaeditaComponent,
     CalificacionDialogoComponent,
-
+    InstitucionComponent,
+    InstitucionListarComponent,
+    InstitucionCrudComponent,
+    InstitucionDialogoComponent,
+    CarreraCreaeditaComponent,
+    CarreraListarComponent,
+    CarreraDialogoComponent,
+    CarreraComponent
   ],
   imports: [
     BrowserModule,

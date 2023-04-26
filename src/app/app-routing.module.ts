@@ -8,6 +8,10 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 import { UsuarioCreaeditaComponent } from './components/usuario/usuario-creaedita/usuario-creaedita.component';
 import { CalificacionComponent } from './components/calificacion/Calificacion.component';
 import { CalificacionCreaeditaComponent } from './components/calificacion/Calificacion-creaedita/Calificacion-creaedita.component';
+import { InstitucionComponent } from './components/institucion/institucion.component';
+import { InstitucionCrudComponent } from './components/institucion/institucion-crud/institucion-crud.component';
+import { CarreraComponent } from './components/carrera/carrera.component';
+import { CarreraCreaeditaComponent } from './components/carrera/carrera-creaedita/carrera-creaedita.component';
 
 const routes: Routes = [
   {
@@ -33,7 +37,19 @@ const routes: Routes = [
       { path: 'nuevo', component: CalificacionCreaeditaComponent },
       { path: 'edicion/:id', component: CalificacionCreaeditaComponent }
     ]
-  }
+  },
+  {
+    path: 'Institucion', component: InstitucionComponent, children: [
+      { path: 'Crear', component: InstitucionCrudComponent },
+      { path: 'Edicion/:id', component: InstitucionCrudComponent }
+    ]
+  },
+  {path:'carreras',component:CarreraComponent, children:[
+
+    { path:'nuevo', component:CarreraCreaeditaComponent },
+
+    {path:'edicion/:id', component:CarreraCreaeditaComponent}
+  ]}
 ];
 
 @NgModule({
