@@ -31,6 +31,10 @@ import { InstitucionComponent } from './components/institucion/institucion.compo
 import { InstitucionListarComponent } from './components/institucion/institucion-listar/institucion-listar.component';
 import { InstitucionCrudComponent } from './components/institucion/institucion-crud/institucion-crud.component';
 import { InstitucionDialogoComponent } from './components/institucion/institucion-listar/institucion-dialogo/institucion-dialogo.component';
+import { CarreraCreaeditaComponent } from './components/carrera/carrera-creaedita/carrera-creaedita.component';
+import { CarreraListarComponent } from './components/carrera/carrera-listar/carrera-listar.component';
+import { CarreraDialogoComponent } from './components/carrera/carrera-listar/carrera-dialogo/carrera-dialogo.component';
+import { CarreraComponent } from './components/carrera/carrera.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +54,11 @@ import { InstitucionDialogoComponent } from './components/institucion/institucio
     InstitucionComponent,
     InstitucionListarComponent,
     InstitucionCrudComponent,
-    InstitucionDialogoComponent
+    InstitucionDialogoComponent,
+    CarreraCreaeditaComponent,
+    CarreraListarComponent,
+    CarreraDialogoComponent,
+    CarreraComponent
   ],
   imports: [
     BrowserModule,
