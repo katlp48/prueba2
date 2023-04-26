@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Calificacion } from 'src/app/model/calificacion';
 
-import * as moment from 'moment'
 import { CalificacionService } from 'src/app/service/calificacion.service';
 import { ActivatedRoute, Params, Router } from '@angular/router'
 @Component({

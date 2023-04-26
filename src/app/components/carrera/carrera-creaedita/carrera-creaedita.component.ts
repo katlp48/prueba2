@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Carrera } from 'src/app/model/carrera';
-import * as moment from 'moment';
 
 import { CarreraService } from 'src/app/service/carrera.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
@@ -15,7 +14,6 @@ export class CarreraCreaeditaComponent implements OnInit {
   form:FormGroup = new FormGroup({});
   carrera:Carrera = new Carrera();
   mensaje: string="";
-  maxFecha :Date= moment().add(-1,'days').toDate();
 
   id:number=0;
   edicion:boolean=false;
