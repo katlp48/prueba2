@@ -1,9 +1,9 @@
-<p>
+<p *ngIf="open">
   <mat-toolbar color="primary">
     <span><mat-icon>filter_drama</mat-icon> Connection2Connection</span>
   </mat-toolbar>
 </p>
-<nav mat-tab-nav-bar ngClass = "tabs">
+<nav mat-tab-nav-bar ngClass = "tabs" *ngIf="open">
   <a mat-tab-link routerLink="/Empresa" routerLinkActive="active-link">Empresa</a>
   <a mat-tab-link routerLink="/usuarios" routerLinkActive="active-link">Usuario</a>
   <a mat-tab-link routerLink="/requisitos" routerLinkActive="active-link">Requisito</a>

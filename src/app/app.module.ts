@@ -39,6 +39,7 @@ import { CarreraCreaeditaComponent } from './components/carrera/carrera-creaedit
 import { CarreraListarComponent } from './components/carrera/carrera-listar/carrera-listar.component';
 import { CarreraDialogoComponent } from './components/carrera/carrera-listar/carrera-dialogo/carrera-dialogo.component';
 import { CarreraComponent } from './components/carrera/carrera.component';
+import { LandingComponent } from './components/landing/landing.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { CarreraComponent } from './components/carrera/carrera.component';
     CarreraCreaeditaComponent,
     CarreraListarComponent,
     CarreraDialogoComponent,
-    CarreraComponent
+    CarreraComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

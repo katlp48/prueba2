@@ -12,8 +12,13 @@ import { InstitucionComponent } from './components/institucion/institucion.compo
 import { InstitucionCrudComponent } from './components/institucion/institucion-crud/institucion-crud.component';
 import { CarreraComponent } from './components/carrera/carrera.component';
 import { CarreraCreaeditaComponent } from './components/carrera/carrera-creaedita/carrera-creaedita.component';
+import { LandingComponent } from './components/landing/landing.component';
 
 const routes: Routes = [
+  {
+    path:'' ,component:LandingComponent,
+
+  },
   {
     path:'Empresa' ,component:EmpresaComponent, children:[
       {path:'Crear' ,component:EmpresaCRUDComponent},
