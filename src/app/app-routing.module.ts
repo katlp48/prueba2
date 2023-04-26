@@ -6,6 +6,8 @@ import { RequisitosComponent } from './components/requisitos/requisitos.componen
 import { RequisitosCreaeditaComponent } from './components/requisitos/requisitos-creaedita/requisitos-creaedita.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { UsuarioCreaeditaComponent } from './components/usuario/usuario-creaedita/usuario-creaedita.component';
+import { CalificacionComponent } from './components/calificacion/Calificacion.component';
+import { CalificacionCreaeditaComponent } from './components/calificacion/Calificacion-creaedita/Calificacion-creaedita.component';
 import { InstitucionComponent } from './components/institucion/institucion.component';
 import { InstitucionCrudComponent } from './components/institucion/institucion-crud/institucion-crud.component';
 import { CarreraComponent } from './components/carrera/carrera.component';
@@ -31,6 +33,12 @@ const routes: Routes = [
     ]
   },
   {
+    path: 'Calificacion', component: CalificacionComponent, children: [
+      { path: 'nuevo', component: CalificacionCreaeditaComponent },
+      { path: 'edicion/:id', component: CalificacionCreaeditaComponent }
+    ]
+  },
+  {
     path: 'Institucion', component: InstitucionComponent, children: [
       { path: 'Crear', component: InstitucionCrudComponent },
       { path: 'Edicion/:id', component: InstitucionCrudComponent }
@@ -42,7 +50,6 @@ const routes: Routes = [
 
     {path:'edicion/:id', component:CarreraCreaeditaComponent}
   ]}
-
 ];
 
 @NgModule({
