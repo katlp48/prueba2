@@ -19,8 +19,8 @@ export class RequisitoService
   list() {
     return this.http.get<Requisito[]>(this.url);
   }
-  insert(author: Requisito) {
-    return this.http.post(this.url, author);
+  insert(Calificacion: Requisito) {
+    return this.http.post(this.url, Calificacion);
   }
 
   setList(listaNueva: Requisito[]) {

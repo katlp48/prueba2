@@ -10,7 +10,7 @@
   <div class="container">
     <div style="text-align: center;">
 
-      <h1>Registro de Empresas</h1>
+      <h1>Registro de Instituciones Educativas</h1>
     </div>
     <form [formGroup]="form" (submit)="aceptar()">
 
@@ -21,23 +21,13 @@
       <br>
       <mat-form-field class="example-full-width">
         <mat-label>Nombre:</mat-label>
-        <input matInput required placeholder="Nombre" formControlName="nombre_Empresa">
-      </mat-form-field>
-      <br>
-      <mat-form-field class="example-full-width">
-        <mat-label>Descripcion:</mat-label>
-        <input matInput required placeholder="Descripcion" formControlName="descripcion_Empresa">
-      </mat-form-field>
-      <br>
-      <mat-form-field class="example-full-width">
-        <mat-label>Email:</mat-label>
-        <input matInput required placeholder="Email@gmail.com" formControlName="correo_Empresa">
+        <input matInput required placeholder="Nombre" formControlName="nombre_Institucion">
       </mat-form-field>
       <br>
       <div style="text-align: center;">
 
       <button mat-raised-button color="primary">Aceptar</button>
-      <button mat-raised-button color="warn" routerLink="/Empresa">Cancelar</button>
+      <button mat-raised-button color="warn" routerLink="/Institucion">Cancelar</button>
       <br>
       </div>
       <p>{{mensaje}}</p>
