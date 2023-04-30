@@ -200,29 +200,6 @@ header{
 .container_about_content .leer_mas:hover{
   background-color: #FFDE59;
 }
-@media (max-width: 768px){
-  .container{
-    line-height: 0px;
-    max-width: 100%;
-  }
-  .container .text h2{
-    font-size: 22px;
-  }
-  .Nosotros{
-    padding: 0px 10px;
-  }
-  .titulo h1{
-    font-size: 22px;
-  }
-  .sobre{
-    padding: 10px;
-    flex-direction: column;
-  }
-  .container_about_content p,
-  .titulo p{
-    font-size: 16px;
-  }
-}
  /*Nuestros servicios*/
  .Servicios{
   position: relative;
