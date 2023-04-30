@@ -17,7 +17,7 @@ export class AppComponent {
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event : any) =>{
 
-      if(event.url === '/' || event.url==='/#Inicio' || event.url==='/#Nosotros' || event.url==='/#Servicios') {
+      if(event.url === '/' || event.url==='/#Inicio' || event.url==='/#Nosotros' || event.url==='/#Servicios' || event.url==='/login' || event.url==='/registrar-usuario') {
         this.open = false;
       } else{
         this.open=true

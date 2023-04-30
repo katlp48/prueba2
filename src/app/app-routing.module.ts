@@ -14,12 +14,16 @@ import { CarreraComponent } from './components/carrera/carrera.component';
 import { CarreraCreaeditaComponent } from './components/carrera/carrera-creaedita/carrera-creaedita.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegistrarUsuarioComponent } from './components/registrar-usuario/registrar-usuario.component';
 
 const routes: Routes = [
   {
     path:'' ,component:LandingComponent,
 
   },
+  { path: 'login', component: LoginComponent },
+  { path: 'registrar-usuario', component: RegistrarUsuarioComponent },
   {
     path:'Empresa' ,component:EmpresaComponent, children:[
       {path:'Crear' ,component:EmpresaCRUDComponent},
