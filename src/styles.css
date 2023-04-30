@@ -3,3 +3,24 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+html, body {
+  height: 100%;
+}
+
+
+
+.body {
+  width: 100%;
+  max-width: 330px;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+}
+
+.form-floating {
+  text-align: start;
+}
+
+.errorLabel {
+  margin-left: 5px;
+}
