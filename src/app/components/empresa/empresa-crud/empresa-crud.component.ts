@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup,ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 import { ActivatedRoute, Router, Params } from '@angular/router';
-import { Empresa } from 'src/app/model/Empresa';
+import { Empresa } from 'src/app/model/empresa';
 import { EmpresaService } from 'src/app/service/empresa.service';
 
 @Component({
@@ -39,7 +39,7 @@ export class EmpresaCRUDComponent implements OnInit{
     this.empresa.nombre_Empresa= this.form.value['nombre_Empresa'];
     this.empresa.descripcion_Empresa = this.form.value['descripcion_Empresa'];
     this.empresa.correo_Empresa = this.form.value['correo_Empresa'];
-    if (this.form.value['nombre_Empresa'].length > 0 && this.form.value['correo_Empresa'].ValidationErrors){
+    if (this.form.value['nombre_Empresa'].length > 0){
 
       if (this.edicion) {
         //actualice
