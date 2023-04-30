@@ -13,6 +13,7 @@ import { InstitucionCrudComponent } from './components/institucion/institucion-c
 import { CarreraComponent } from './components/carrera/carrera.component';
 import { CarreraCreaeditaComponent } from './components/carrera/carrera-creaedita/carrera-creaedita.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
