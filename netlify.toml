@@ -1,5 +1,5 @@
 [build]
-  command = "ng build && npm run json-server"
+  command = "ng build && npm run server"
   publish = "dist/Connection2Connection"
 
 [dev]
