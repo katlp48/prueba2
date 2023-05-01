@@ -25,6 +25,26 @@ export class AppComponent implements OnInit {
     })
 
   }
+  NgOnInit():void{
+    this.http.get('http://localhost:5000/Empresa').subscribe(data => {
+      console.log(data);
+  });
+    this.http.get('http://localhost:5000/Requisitos').subscribe(data => {
+      console.log(data);
+  });
+    this.http.get('http://localhost:5000/Usuario').subscribe(data => {
+      console.log(data);
+  });
+    this.http.get('http://localhost:5000/Institucion_Educativas').subscribe(data => {
+      console.log(data);
+  });
+    this.http.get('http://localhost:5000/Carreras').subscribe(data => {
+      console.log(data);
+  });
+    this.http.get('http://localhost:5000/Calificacio').subscribe(data => {
+      console.log(data);
+  });
+  }
 
 }
 
