@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     })
 
   }
-  NgOnInit():void{
+  ngOnInit():void{
     this.http.get('http://localhost:5000/Empresa').subscribe(data => {
       console.log(data);
   });
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
     this.http.get('http://localhost:5000/Carreras').subscribe(data => {
       console.log(data);
   });
-    this.http.get('http://localhost:5000/Calificacio').subscribe(data => {
+    this.http.get('http://localhost:5000/Calificacion').subscribe(data => {
       console.log(data);
   });
   }
